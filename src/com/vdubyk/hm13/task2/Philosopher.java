@@ -18,7 +18,7 @@ public class Philosopher implements Runnable {
             SEMAPHORE.acquire();
             int placeNumber = -1;
             synchronized (PLACES) {
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i < 2; i++)
                     if (!PLACES[i]) {
                         PLACES[i] = true;
                         placeNumber = i;
